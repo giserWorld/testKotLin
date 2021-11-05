@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-------------------------EditText(文本框)---------------------------
+   1.允许用户在控件中编辑和输入内容
+-->
+<EditText
+    android:id="@+id/edit_text"//控件id
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="请编辑相关内容输入"//文本提示
+/>
+
+

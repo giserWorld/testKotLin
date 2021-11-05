@@ -14,12 +14,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
     fun sendMessage(view: View){
-        val editText = findViewById<EditText>(R.id.editTextTextPersonName);
-        val message = editText.text.toString()
-//        val intent = Intent(this, DisplayMessageActivity::class.java).apply {
-//            putExtra(EXTRA_MESSAGE, message)
-//        }
-//        startActivity(intent)
+        val editText = findViewById<EditText>(R.id.inputvalue);
+        val message = editText.text.toString();//获取文本信息
+        val intent = Intent(this, DisplayMessageActivity::class.java).apply {
+            putExtra(EXTRA_MESSAGE, message)
+        }
+        startActivity(intent)
         Log.d("************", message)
     }
 }

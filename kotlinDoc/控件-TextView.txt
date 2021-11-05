@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-------------------------TextView(文本框)---------------------------
+   1.TextView控件是android最常用的控件之一，可用来展示丰富的文本信息（包括HTML文本），
+   可以手动来设置可编辑或不可编辑
+-->
+<TextView
+    android:id="1"//组件id，通过findViewById()的方法获取到该对象，然后进行相关设置
+    android:layout_width="match_parent"//组件宽度
+    android:layout_height="wrap_content"//组件高度
+    android:padding="24dp"//
+    android:textColor="#a6a6a6"//文本颜色
+    android:textSize="14sp"
+    android:text="我是TextView"//文本内容
+/>
+

@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="5dp" >
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="修改密码"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:padding="15dip">
+
+        <TextView
+            android:id="@+id/tv_pass_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_phone"
+            android:layout_marginTop="8dp"
+            android:text="手机号"
+            android:textSize="14sp"
+            tools:ignore="NotSibling" />
+
+        <EditText
+            android:id="@+id/et_password_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pass_phone"
+            android:background="@drawable/login_edit"
+            android:hint="输入您的手机号"
+            android:paddingLeft="9dp"
+            android:paddingTop="7dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="7dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_pass_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_password_phone"
+            android:layout_marginTop="8dp"
+            android:text="密码"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_password_first"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pass_register"
+            android:background="@drawable/login_edit"
+            android:hint="6-16位密码，区分大小写"
+            android:inputType="textPassword"
+            android:paddingLeft="9dp"
+            android:paddingTop="7dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="7dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_pass_register2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_password_first"
+            android:layout_marginTop="8dp"
+            android:text="确认密码"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_password_second"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pass_register2"
+            android:background="@drawable/login_edit"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:paddingLeft="9dp"
+            android:paddingTop="7dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="7dp"
+            android:password="true"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_verifycode_register2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_password_second"
+            android:layout_marginTop="8dp"
+            android:text="验证码"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_verifycode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_verifycode"
+            android:layout_alignTop="@id/btn_verifycode"
+            android:background="@drawable/login_edit"
+            android:hint="请输入验证码"
+            android:paddingLeft="9dp"
+            android:paddingTop="7dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="7dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_verifycode"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_verifycode_register2"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape"
+            android:drawablePadding="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="获取验证码"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_below="@id/et_verifycode"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@id/et_verifycode"
+            android:background="@drawable/shape"
+            android:drawablePadding="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="修改"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>

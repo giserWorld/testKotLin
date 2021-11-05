@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-------------------------RelativeLayout(相对布局)---------------------------
+   1.相对布局是通过相对定位的方式让控件出现在布局任意位置
+   2.在相对布局中如果不指定控件摆放的位置，那么控件都会被默认放在RelativeLayout的左上角
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    //宽度
+    android:layout_width="50dp"//数值
+    android:layout_width="wrap_content"//布局容器宽度根据容器内容宽度大小来填充屏幕宽度
+    android:layout_width="match_parent"//布局容器宽度为撑满整个屏幕宽度
+    //高度
+    android:layout_height="50dp"//布局容器高度
+    //背景
+    android:background="#000"//背景颜色:hex（rgb颜色）
+    android:background="@color/colorPrimary"//背景为：res/color.xml中获取值
+    //布局方向
+    android:orientation="horizontal"//布局方向（horizontal、vertical）
+    android:orientation="vertical"//布局方向（horizontal、vertical）
+    //子容器相对于父容器所在的位置
+    android:layout_gravity="center"//正中心
+    android:layout_gravity="cente_verticalr"//垂直方向的正中心
+    android:layout_gravity="center_horizontal"//水平方向的正中心
+    android:layout_gravity="left"//最左边（默认）
+    android:layout_gravity="top"//最上方(默认)
+    android:layout_gravity="right"//最右边
+    android:layout_gravity="bottom"//最下方
+    //权重,按比例来分配控件,对线性布局中水平（垂直）方向的剩余空间进行分配
+    //建议水平线性布局中子控件宽度设置成0dp后再设置对应控件的权重，垂直的的高度设置成0再设置权重
+    android:layout_weight="1"//
+>
+
+</RelativeLayout>
